@@ -1,3 +1,4 @@
+import { render } from "react-dom";
 import Box from "./Box"
 const Main=()=>{
 	return(
@@ -7,5 +8,6 @@ const Main=()=>{
 		<Box name="Mary" title="Designer" age="28"/>
 	  </main>
 	)
-  }
+  };
+
   export default Main;
