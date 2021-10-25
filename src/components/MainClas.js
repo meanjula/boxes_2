@@ -8,8 +8,12 @@ class MainClas extends Component{
 		    {name:'Mary', age:32, title:'CEO',love:'swimming'},
 		    {name:'Sophia', age:32, title:'Designer',love:'cycling'},
 		]}
+		changeNameHandler=()=>{
+			console.log('WOOW')
+		}
 	render(){
 		return(
+			< >
 			<main>
 			<Box 
 			name={this.state.persons[0].name} 
@@ -28,9 +32,10 @@ class MainClas extends Component{
 			age={this.state.persons[2].age} 
 			title={this.state.persons[2].title}
 			love={this.state.persons[2].love}
-			/>
-			
+			/>	
 		  </main>
+		  <button onClick={this.changeNameHandler}>Click ME</button>
+		  </>
 		);
 	}
 }

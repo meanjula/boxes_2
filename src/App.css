@@ -26,6 +26,14 @@ main {
   justify-content: center;
   align-items: center;
 }
+button {
+  display: block;
+  border: none;
+  margin: auto;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #333;
+  margin-bottom: 1rem;
+}
 footer {
   text-align: center;
 }
