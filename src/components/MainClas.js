@@ -43,7 +43,6 @@ class MainClas extends Component{
 				/>	
 			  ))}
 		  </main>
-		  <button onClick={this.changeNameHandler}>Click ME</button>
 		  </>
 		);
 	}

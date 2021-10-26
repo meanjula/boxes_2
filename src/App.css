@@ -6,8 +6,11 @@ header,
 main,
 footer {
   background-color: orange;
-  margin: 2rem;
-  padding: 2rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+header {
+  text-align: center;
 }
 main {
   display: flex;
