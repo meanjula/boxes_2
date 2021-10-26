@@ -4,9 +4,10 @@ import Box from "./Box";
 class MainClas extends Component{
 	state={
 		persons:[
-			{name:'Anjula', age:32, title:'Developer', love:'plants and coding'},
-		    {name:'Mary', age:32, title:'CEO',love:'swimming'},
-		    {name:'Sophia', age:32, title:'Designer',love:'cycling'},
+			// use id for identifying items as it is unique for each item
+			{id:1, name:'Anjula', age:32, title:'Developer', love:'plants and coding'},
+		    {id:2, name:'Mary', age:32, title:'CEO',love:'swimming'},
+		    {id:3, name:'Sophia', age:32, title:'Designer',love:'cycling'},
 		]}
 		changeNameHandler=()=>{
 			console.log('WOOW')
@@ -15,7 +16,7 @@ class MainClas extends Component{
 		return(
 			< >
 			<main>
-			<Box 
+			{/* <Box 
 			name={this.state.persons[0].name} 
 			age={this.state.persons[0].age} 
 			title={this.state.persons[0].title}
@@ -32,7 +33,15 @@ class MainClas extends Component{
 			age={this.state.persons[2].age} 
 			title={this.state.persons[2].title}
 			love={this.state.persons[2].love}
-			/>	
+			/>	 */}
+			  {this.state.persons.map(person=>(
+				<Box 
+				    key={person.id}
+					name={person.name}
+					age={person.age} 
+					title={person.title}
+				/>	
+			  ))}
 		  </main>
 		  <button onClick={this.changeNameHandler}>Click ME</button>
 		  </>
